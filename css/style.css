@@ -1,0 +1,69 @@
+/*
+ * 
+ * Project Name: Sticky Note [ using html5 web storage ]
+ * Author Name: Yubaraj Shrestha
+ * URI: http://www.yubarajshrestha.com.np/
+ * 
+ */
+
+
+body {
+	font-family: 'Lucida Grande', "Helvetica", sans-serif, arial;
+	background: lavender;
+}
+
+#newNoteButton {
+	font-size: 25px;
+	padding: 10px;
+	border-radius: 5px;
+	background: #333;
+	color: #fff;
+	border: 0;
+}
+
+#newNoteButton:hover {
+	background: #000;
+}
+
+.note {
+	background-color: rgb(255,240,70);
+	height: 250px;
+	width: 200px;
+	padding: 10px;
+	position: absolute;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	-o-box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+
+.note:hover .closebutton {
+	display: block;
+}
+
+.closebutton {
+	display: none;
+	content: "x";
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: -15px;
+	top: -15px;
+}
+
+.closebutton:active {
+	content: "x";
+}
+
+.timestamp {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 11px;
+	background-color: #db0;
+	color: #000;
+	border-top: 1px solid #a80;
+	padding: 2px auto;
+	text-align: center;
+}
